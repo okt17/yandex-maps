@@ -6,6 +6,7 @@
 
   &__left-pane {
     width: 25%;
+    overflow-y: auto;
   }
 
   &__right-pane {
