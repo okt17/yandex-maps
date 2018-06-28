@@ -1,0 +1,11 @@
+export const ADD_WAYPOINT = 'ADD_WAYPOINT';
+
+export const DELETE_WAYPOINT = 'DELETE_WAYPOINT';
+
+export const INIT_MAP = 'INIT_MAP';
+
+export const MOVE_WAYPOINT = 'MOVE_WAYPOINT';
+
+export const SET_NEW_WAYPOINT_NAME = 'SET_NEW_WAYPOINT_NAME';
+
+export const UPDATE_WAYPOINT = 'UPDATE_WAYPOINT';

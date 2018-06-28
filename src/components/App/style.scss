@@ -1,0 +1,13 @@
+.app {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+
+  &__left-pane {
+    width: 25%;
+  }
+
+  &__right-pane {
+    width: 75%;
+  }
+}

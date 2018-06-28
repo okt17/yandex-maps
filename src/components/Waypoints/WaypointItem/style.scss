@@ -1,0 +1,8 @@
+.app__waypoints__item {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
