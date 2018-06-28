@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Input } from '@material-ui/core';
 import WaypointItem from './WaypointItem';
-import './style';
 import WaypointItemDropArea from './WaypointItemDropArea';
+import './style';
 
 class Waypoints extends React.Component {
   static propTypes = {
@@ -32,9 +32,11 @@ class Waypoints extends React.Component {
     return (
       <div className='app__waypoints'>
         <Input
+          autoFocus
+          className='app__waypoints__input'
           onChange={this.handleInputChange}
-          value={newWaypointName}
           onKeyDown={this.handleInputKeydown}
+          value={newWaypointName}
         />
 
         {

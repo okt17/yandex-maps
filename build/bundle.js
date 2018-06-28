@@ -44759,7 +44759,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".app {\n  height: 100%;\n  overflow: hidden;\n  display: flex; }\n  .app__left-pane {\n    width: 25%; }\n  .app__right-pane {\n    width: 75%; }\n", ""]);
+exports.push([module.i, ".app {\n  background-color: lightyellow;\n  display: flex;\n  height: 100%;\n  overflow: hidden; }\n  .app__left-pane {\n    width: 25%; }\n  .app__right-pane {\n    width: 75%; }\n", ""]);
 
 // exports
 
@@ -44797,7 +44797,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".app__waypoints__item {\n  cursor: -webkit-grab;\n  cursor: -moz-grab; }\n  .app__waypoints__item:hover {\n    background-color: lightblue; }\n", ""]);
+exports.push([module.i, ".app__waypoints__item {\n  border-radius: 5px;\n  cursor: -webkit-grab;\n  cursor: -moz-grab;\n  display: flex;\n  padding: 0.5rem; }\n  .app__waypoints__item:hover {\n    background-color: wheat; }\n  .app__waypoints__item__container {\n    flex: 5 5 100%;\n    padding: 0.5rem; }\n", ""]);
 
 // exports
 
@@ -44835,7 +44835,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".app__waypoints {\n  margin: 0.75rem; }\n  .app__waypoints__input {\n    width: 100%; }\n", ""]);
 
 // exports
 
@@ -79401,6 +79401,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var BCN = 'app__waypoints__item'; // Base Class Name
+
+var toFixed = function toFixed(n) {
+  return n.toFixed(3);
+};
+
 var WaypointItem = function (_React$Component) {
   _inherits(WaypointItem, _React$Component);
 
@@ -79428,21 +79434,45 @@ var WaypointItem = function (_React$Component) {
   _createClass(WaypointItem, [{
     key: 'render',
     value: function render() {
-      var waypoint = this.props.waypoint;
+      var _props$waypoint = this.props.waypoint,
+          name = _props$waypoint.name,
+          coordinates = _props$waypoint.coordinates;
 
 
       return _react2.default.createElement(
         'div',
         {
-          className: 'app__waypoints__item',
+          className: BCN,
           draggable: true,
           onDragStart: this.handleDragStart
         },
-        JSON.stringify(waypoint),
         _react2.default.createElement(
-          _core.Button,
-          { onClick: this.handleDeleteButtonClick },
-          'X'
+          'span',
+          { className: BCN + '__container' },
+          _react2.default.createElement(
+            'div',
+            null,
+            name
+          ),
+          _react2.default.createElement(
+            'div',
+            null,
+            coordinates.map(toFixed).join(', ')
+          )
+        ),
+        _react2.default.createElement(
+          _core.IconButton,
+          {
+            color: 'secondary',
+            onClick: this.handleDeleteButtonClick,
+            size: 'small',
+            title: '\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0442\u043E\u0447\u043A\u0443 \u043C\u0430\u0440\u0448\u0440\u0443\u0442\u0430'
+          },
+          _react2.default.createElement(
+            _core.Icon,
+            null,
+            'clear'
+          )
         )
       );
     }
@@ -79660,11 +79690,11 @@ var _WaypointItem = __webpack_require__(/*! ./WaypointItem */ "./src/components/
 
 var _WaypointItem2 = _interopRequireDefault(_WaypointItem);
 
-__webpack_require__(/*! ./style */ "./src/components/Waypoints/style.scss");
-
 var _WaypointItemDropArea = __webpack_require__(/*! ./WaypointItemDropArea */ "./src/components/Waypoints/WaypointItemDropArea/index.jsx");
 
 var _WaypointItemDropArea2 = _interopRequireDefault(_WaypointItemDropArea);
+
+__webpack_require__(/*! ./style */ "./src/components/Waypoints/style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79712,9 +79742,11 @@ var Waypoints = function (_React$Component) {
         'div',
         { className: 'app__waypoints' },
         _react2.default.createElement(_core.Input, {
+          autoFocus: true,
+          className: 'app__waypoints__input',
           onChange: this.handleInputChange,
-          value: newWaypointName,
-          onKeyDown: this.handleInputKeydown
+          onKeyDown: this.handleInputKeydown,
+          value: newWaypointName
         }),
         waypoints.map(function (waypoint, i) {
           return _react2.default.createElement(
@@ -80220,7 +80252,7 @@ function moveMarker(markers, oldIndex, newIndex) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */"./node_modules/babel-polyfill/lib/index.js");
-module.exports = __webpack_require__(/*! D:\work\misc\demo\laba4\yandex-maps\src/index.jsx */"./src/index.jsx");
+module.exports = __webpack_require__(/*! C:\work\yandex-maps\src/index.jsx */"./src/index.jsx");
 
 
 /***/ })

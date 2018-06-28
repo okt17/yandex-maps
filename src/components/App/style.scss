@@ -1,7 +1,8 @@
 .app {
+  background-color: lightyellow;
+  display: flex;
   height: 100%;
   overflow: hidden;
-  display: flex;
 
   &__left-pane {
     width: 25%;
