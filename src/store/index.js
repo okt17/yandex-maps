@@ -7,8 +7,4 @@ const store = createStore(
   applyMiddleware(thunk),
 );
 
-// temporary
-store.subscribe(() => console.log(store.getState()));
-window.store = store;
-
 export default store;

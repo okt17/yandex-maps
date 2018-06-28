@@ -80087,12 +80087,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddleware)(_reduxThunk2.default));
 
-// temporary
-store.subscribe(function () {
-  return console.log(store.getState());
-});
-window.store = store;
-
 exports.default = store;
 
 /***/ }),
