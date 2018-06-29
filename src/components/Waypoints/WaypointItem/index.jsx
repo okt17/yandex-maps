@@ -13,9 +13,7 @@ class WaypointItem extends React.Component {
     index: PropTypes.number.isRequired,
     waypoint: PropTypes.object.isRequired,
   };
-  handleDeleteButtonClick = () => (
-    this.props.deleteWaypoint(this.props.waypoint.id)
-  );
+  handleDeleteButtonClick = () => this.props.deleteWaypoint(this.props.waypoint.id);
   handleDragStart = (event) => {
     event.dataTransfer.effectAllowed = 'move';
     event.dataTransfer.setData('waypoint', this.props.index);

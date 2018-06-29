@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component test 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="app__left-pane"
+  >
+    <div
+      className="app__waypoints"
+    >
+      <div
+        className="MuiInput-root-1 MuiInput-underline-5 app__waypoints__input"
+      >
+        <input
+          autoFocus={true}
+          className="MuiInput-input-9"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value="value"
+        />
+      </div>
+      <div
+        className="app__waypoints__drop-area"
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDrop={[Function]}
+      />
+      <div
+        className="app__waypoints__item"
+        draggable={true}
+        onDragStart={[Function]}
+      >
+        <span
+          className="app__waypoints__item__container"
+        >
+          <div>
+            waypoint1
+          </div>
+          <div>
+            20.000, 18.000
+          </div>
+        </span>
+        <button
+          className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiIconButton-colorSecondary-17"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          size="small"
+          tabIndex="0"
+          title="Удалить точку маршрута"
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label-19"
+          >
+            <span
+              aria-hidden="true"
+              className="material-icons MuiIcon-root-23"
+            >
+              clear
+            </span>
+          </span>
+          <span
+            className="MuiTouchRipple-root-29"
+          />
+        </button>
+      </div>
+      <div
+        className="app__waypoints__drop-area"
+        onDragEnter={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDrop={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="app__right-pane"
+  >
+    <div
+      className="app__map"
+    />
+  </div>
+</div>
+`;

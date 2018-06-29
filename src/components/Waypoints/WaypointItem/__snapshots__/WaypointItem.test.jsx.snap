@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WaypointItem component test 1`] = `
+<div
+  className="app__waypoints__item"
+  draggable={true}
+  onDragStart={[Function]}
+>
+  <span
+    className="app__waypoints__item__container"
+  >
+    <div>
+      waypoint
+    </div>
+    <div>
+      37.000, 13.000
+    </div>
+  </span>
+  <button
+    className="MuiButtonBase-root-7 MuiIconButton-root-1 MuiIconButton-colorSecondary-4"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    size="small"
+    tabIndex="0"
+    title="Удалить точку маршрута"
+    type="button"
+  >
+    <span
+      className="MuiIconButton-label-6"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-10"
+      >
+        clear
+      </span>
+    </span>
+    <span
+      className="MuiTouchRipple-root-16"
+    />
+  </button>
+</div>
+`;

@@ -4,9 +4,9 @@
   "description": "Yandex Maps with React",
   "main": "src/index.jsx",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "npm run test && webpack --mode production",
     "dev": "webpack --watch --mode development",
-    "test": "jest"
+    "test": "jest -u"
   },
   "author": "okt17",
   "license": "ISC",

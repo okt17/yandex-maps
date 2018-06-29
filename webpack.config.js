@@ -49,5 +49,11 @@ module.exports = (env, argv) => ({
     enforceExtension: false,
     extensions: ['.js', '.jsx', '.scss', '.json']
   },
-  devtool: argv.mode === 'development' ? 'source-map' : undefined
+  devtool: (
+    argv !== undefined
+    &&
+    argv.mode === 'development'
+  )
+    ? 'source-map'
+    : undefined
 });

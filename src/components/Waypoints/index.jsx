@@ -15,10 +15,18 @@ class Waypoints extends React.Component {
     waypoints: PropTypes.array.isRequired,
   };
   handleInputChange = event => this.props.setNewWaypointName(event.target.value);
+  handleInputFocus = (event) => {
+    event.target.select();
+  };
   handleInputKeydown = (event) => {
     // Enter
     if (event.keyCode === 13) {
       this.props.addWaypoint();
+
+      // focus the input after handling the event
+      const input = event.target;
+      // put this on top of the event loop queue
+      setTimeout(() => input.select(), 0);
     }
   };
   render() {
@@ -35,6 +43,7 @@ class Waypoints extends React.Component {
           autoFocus
           className='app__waypoints__input'
           onChange={this.handleInputChange}
+          onFocus={this.handleInputFocus}
           onKeyDown={this.handleInputKeydown}
           value={newWaypointName}
         />
