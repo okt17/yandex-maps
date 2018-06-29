@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run test && webpack --mode production",
     "dev": "webpack --watch --mode development",
-    "test": "jest -u"
+    "test": "jest"
   },
   "author": "okt17",
   "license": "ISC",

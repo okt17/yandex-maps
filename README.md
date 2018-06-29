@@ -2,7 +2,7 @@
 
 React + Yandex Maps
 
-#### Реализовано с помощью:
+#### Includes:
 - Webpack
 - NPM
 - Babel
@@ -14,3 +14,4 @@ React + Yandex Maps
 - Axios
 - Yandex Maps
 - SASS (SCSS)
+- Jest

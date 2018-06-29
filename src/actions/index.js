@@ -44,7 +44,7 @@ export function setNewWaypointName(value) {
 }
 
 export function updateWaypoint(id, data) {
-  // обновление списка точек маршрута и маршрута на карте
+  // обновление одной точки маршрута
   return (dispatch, getState) => {
     const {
       map: {

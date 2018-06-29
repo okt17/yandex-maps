@@ -50,7 +50,7 @@ module.exports = (env, argv) => ({
     extensions: ['.js', '.jsx', '.scss', '.json']
   },
   devtool: (
-    argv !== undefined
+    argv !== undefined // required for eslint
     &&
     argv.mode === 'development'
   )

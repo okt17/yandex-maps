@@ -1,5 +1,5 @@
 .app {
-  background-color: lightyellow;
+  background-color: #66CCFF;
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -7,6 +7,7 @@
   &__left-pane {
     width: 25%;
     overflow-y: auto;
+    border-right: 3px ridge #3399FF;
   }
 
   &__right-pane {

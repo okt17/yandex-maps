@@ -7,7 +7,7 @@ const BCN = 'app__waypoints__item'; // Base Class Name
 
 const toFixed = n => n.toFixed(3);
 
-class WaypointItem extends React.Component {
+class WaypointItem extends React.PureComponent {
   static propTypes = {
     deleteWaypoint: PropTypes.func.isRequired,
     index: PropTypes.number.isRequired,
