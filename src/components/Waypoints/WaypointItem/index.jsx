@@ -41,7 +41,7 @@ class WaypointItem extends React.PureComponent {
         </span>
 
         <IconButton
-          color='secondary'
+          className={`${BCN}__button`}
           onClick={this.handleDeleteButtonClick}
           size='small'
           title='Удалить точку маршрута'

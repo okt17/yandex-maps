@@ -1,6 +1,6 @@
 .app__waypoints__item {
-  background-color: #56BCEF;
-  border: 1px solid #3399FF;
+  background-color: #64B5F6;
+  border: 1px solid #1565C0;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   cursor: -webkit-grab;
@@ -9,8 +9,11 @@
   padding: 0.5rem;
 
   &:hover {
-    background-color: #0066FF;
-    color: white;
+    background-color: #42A5F5;
+  }
+
+  &__button {
+    color: white !important;
   }
 
   &__container {

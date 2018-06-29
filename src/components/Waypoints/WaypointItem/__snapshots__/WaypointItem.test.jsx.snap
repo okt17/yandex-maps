@@ -17,7 +17,7 @@ exports[`WaypointItem component test 1`] = `
     </div>
   </span>
   <button
-    className="MuiButtonBase-root-7 MuiIconButton-root-1 MuiIconButton-colorSecondary-4"
+    className="MuiButtonBase-root-7 MuiIconButton-root-1 app__waypoints__item__button"
     disabled={false}
     onBlur={[Function]}
     onClick={[Function]}

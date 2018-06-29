@@ -47,7 +47,7 @@ exports[`App component test 1`] = `
           </div>
         </span>
         <button
-          className="MuiButtonBase-root-20 MuiIconButton-root-14 MuiIconButton-colorSecondary-17"
+          className="MuiButtonBase-root-20 MuiIconButton-root-14 app__waypoints__item__button"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
