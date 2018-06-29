@@ -33,7 +33,7 @@ function swapMarkers(marker1, marker2) {
 
 export function moveMarker(markers, oldIndex, newIndex) {
   if (oldIndex < newIndex) {
-    newIndex = Math.min(newIndex, markers.length - 1);
+    newIndex -= 1;
     for (let i = oldIndex; i < newIndex; i += 1) {
       swapMarkers(markers[i], markers[i + 1]);
     }

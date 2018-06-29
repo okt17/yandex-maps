@@ -1,10 +1,11 @@
-var
+const
   path = require('path'),
+  CleanWebpackPlugin = require('clean-webpack-plugin'),
   WebpackNotifierPlugin = require('webpack-notifier'),
   BUILD_DIR = path.resolve(__dirname, 'build'),
   APP_DIR = path.resolve(__dirname, 'src');
 
-module.exports = {
+module.exports = (env, argv) => ({
   entry: [
     'babel-polyfill',
     APP_DIR + '/index.jsx'
@@ -38,7 +39,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new WebpackNotifierPlugin({alwaysNotify: true}),
+    new WebpackNotifierPlugin({ alwaysNotify: true }),
+    new CleanWebpackPlugin(path.resolve(__dirname, 'build/*.*')),
   ],
   resolve: {
     alias: {
@@ -47,5 +49,5 @@ module.exports = {
     enforceExtension: false,
     extensions: ['.js', '.jsx', '.scss', '.json']
   },
-  devtool: 'source-map'
-};
+  devtool: argv.mode === 'development' ? 'source-map' : undefined
+});

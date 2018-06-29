@@ -4,8 +4,8 @@ export function moveItem(array, oldIndex, newIndex) {
   const item = array[oldIndex];
   let result = array;
 
-  newIndex = Math.min(newIndex, array.length);
   if (oldIndex < newIndex) {
+    newIndex -= 1;
     result = [
       ...array.slice(0, oldIndex),
       ...array.slice(oldIndex + 1, newIndex + 1),
